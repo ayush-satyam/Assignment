@@ -1,0 +1,159 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling header navigation */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+header nav {
+    background-color: rgb(241, 54, 54);
+    text-align: center;
+    padding: 20px 0;
+}
+#img4 {
+    height: 40px;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 20px; /* Adjust spacing between navbar links */
+    font-size: 25px; /* Adjust font size for navbar links */
+    font-weight: bolder;
+}
+
+/* Styling main section */
+
+
+/* Styling div2 */
+.div2 {
+    display: flex;
+}
+.div3 {
+    padding: 100px;
+}
+.h1 {
+    font-family: sans-serif;
+    padding: 50px;
+    font-size: 50px;
+}
+.p1 {
+    font-family: sans-serif;
+    padding:0 50px;
+    font-size: 18px;
+}
+.div10 img {
+    background-size: cover;
+    background-position: right;
+    height: 800px;
+    display: flex;
+    justify-content: start;
+    text-align: start;
+}
+
+/* Styling div3 */
+.div3 {
+    background: linear-gradient(to right, rgba(228, 80, 80, 0.8), rgba(228, 80, 80, 0.5)); /* Gradient background */
+    padding: 20px;  
+    width: 50%;
+}
+
+/* Styling button */
+input[type="button"] {
+    margin: 50px;
+    padding: 15px 80px;
+    background-color: rgb(241, 54, 54);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px; /* Adjust font size for button */
+}
+
+.div4 {
+    max-height: auto;
+    max-width: auto;
+    display: flex;
+    background: linear-gradient(to right, rgba(228, 80, 80, 0.8), rgba(228, 80, 80, 0.5)); /* Gradient background */
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center; /* Center items vertically */
+    padding: 200px; /* Add padding for spacing */
+    margin-top: 10px;
+    padding-right: 500px;
+}
+
+.div5,
+.div6,
+.div7 {
+    flex: 1; /* Equal width for each item */
+    margin: 0 10px; /* Add margin for spacing between items */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div5 img,
+.div6 img { 
+    width: 250px;
+    height: 200px; /* Maintain aspect ratio */
+    max-height: 200px; /* Limit max height */
+    background-size: cover;
+    padding: 5px;
+}
+
+.div7 img {
+    max-width: 250px; /* Ensure images don't exceed container width */
+    height: 390px; /* Maintain aspect ratio */
+    max-height: 400px; /* Limit max height */
+    background-size: cover;
+}
+
+.p2, .h2 {
+    font-family: sans-serif;
+}
+.p2 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.div8 {
+    background: linear-gradient(to right, rgba(228, 80, 80, 0.8), rgba(228, 80, 80, 0.5)); /* Gradient background */
+    color: black;
+    text-align: start;
+    font-size: 25px;
+    padding: 20px;
+    height: 250px;
+    width: 500px;
+    margin-top: 20px; /* Add spacing between div4 and div8 */
+}
+
+/* Media query for tablet */
+@media (max-width: 768px) {
+    .div10 img {
+        height: auto; /* Change height to auto for responsiveness */
+    }
+    
+    .div3 {
+        width: 100%; /* Adjust div3 width for responsiveness */
+        padding: 50px; /* Adjust padding for responsiveness */
+    }
+    
+    .div8 {
+        width: 90%; /* Adjust width for responsiveness */
+    }
+}
+
+/* Media query for mobile */
+@media (max-width: 480px) {
+    .div3 {
+        padding: 30px; /* Adjust padding for smaller screens */
+    }
+    
+    .div8 {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+}
